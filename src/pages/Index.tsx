@@ -1,12 +1,7 @@
-import { ThemeProvider } from "@/components/theme-context"
-import { LandingPage } from "@/components/landing-page"
+import { HealthyPauseLanding } from "@/components/healthy-pause-landing"
 
 const Index = () => {
-  return (
-    <ThemeProvider>
-      <LandingPage />
-    </ThemeProvider>
-  )
+  return <HealthyPauseLanding />
 }
 
 export default Index
