@@ -6,7 +6,8 @@ import { themes, type ThemeMode } from "@/lib/themes"
 import { cn } from "@/lib/utils"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
-import { ArrowRight, Bell, Sparkles, Zap, Shield, Star } from "lucide-react"
+import { ArrowRight, Bell, Heart, Eye, Brain, Book, Timer, Shield } from "lucide-react"
+import Icon from "@/components/ui/icon"
 
 export function LandingPage() {
   const { theme } = useTheme()
@@ -49,100 +50,100 @@ export function LandingPage() {
   > = {
     "minimal-light": {
       badge: "Скоро запуск",
-      title: "Будущее",
-      highlight: "продуктивности",
+      title: "HealthyPause",
+      highlight: "здоровое будущее детей",
       subtitle:
-        "Мы создаем то, что изменит ваш подход к работе. Просто, мощно и современно.",
-      cta: "Получить ранний доступ",
+        "Приложение для правильного распределения времени, заботы о здоровье и развитии ваших детей.",
+      cta: "Узнать первым о запуске",
       features: [
-        { icon: Sparkles, text: "На базе ИИ" },
-        { icon: Zap, text: "Молниеносно" },
-        { icon: Shield, text: "Приватность" },
+        { icon: Eye, text: "Забота о зрении" },
+        { icon: Heart, text: "Физкультминутки" },
+        { icon: Brain, text: "Умственное развитие" },
       ],
     },
     dark: {
       badge: "Скоро старт",
-      title: "Новый уровень",
-      highlight: "эволюции",
-      subtitle: "Новый стандарт цифрового опыта. Создано для тех, кто требует лучшего.",
-      cta: "Встать в очередь",
+      title: "HealthyPause",
+      highlight: "здоровье детей",
+      subtitle: "Помогаем детям и подросткам сохранять баланс между гаджетами и заботой о себе.",
+      cta: "Получить ранний доступ",
       features: [
-        { icon: Sparkles, text: "Новое поколение" },
-        { icon: Zap, text: "Сверхскорость" },
-        { icon: Shield, text: "Для бизнеса" },
+        { icon: Timer, text: "Умные паузы" },
+        { icon: Eye, text: "Гимнастика для глаз" },
+        { icon: Brain, text: "Развивающие задания" },
       ],
     },
     retro: {
       badge: "Отправление скоро",
-      title: "Ваше путешествие",
-      highlight: "начинается здесь",
-      subtitle: "Шагните в мир, где классика встречает инновации. Вечный дизайн, современный функционал.",
-      cta: "Забронировать место",
+      title: "HealthyPause",
+      highlight: "путь к здоровью",
+      subtitle: "Формируем у детей правильные привычки заботы о здоровье с ранних лет.",
+      cta: "Записаться в список ожидания",
       features: [
-        { icon: Sparkles, text: "Вечный дизайн" },
-        { icon: Zap, text: "Мгновенный доступ" },
-        { icon: Shield, text: "Надежность" },
+        { icon: Heart, text: "Физическая активность" },
+        { icon: Book, text: "Чтение и развитие" },
+        { icon: Shield, text: "Родительский контроль" },
       ],
     },
     neon: {
       badge: "[ ИНИЦИАЛИЗАЦИЯ ]",
-      title: "СИСТЕМНЫЙ",
-      highlight: "ПРОРЫВ",
-      subtitle: "Протокол интерфейса нового поколения. Ломаем барьеры. Переопределяем границы.",
-      cta: "НАЧАТЬ ДОСТУП",
+      title: "HEALTHYPAUSE",
+      highlight: "НОВАЯ ЭРА",
+      subtitle: "Революционный подход к здоровью детей в цифровую эпоху. Баланс. Развитие. Будущее.",
+      cta: "ПОЛУЧИТЬ ДОСТУП",
       features: [
-        { icon: Sparkles, text: "КВАНТОВОЕ ЯДРО" },
-        { icon: Zap, text: "ГИПЕРСКОРОСТЬ" },
-        { icon: Shield, text: "ШИФРОВАНИЕ" },
+        { icon: Timer, text: "УМНЫЙ ТАЙМЕР" },
+        { icon: Brain, text: "ИИ-РЕКОМЕНДАЦИИ" },
+        { icon: Shield, text: "ЗАЩИТА ДАННЫХ" },
       ],
     },
     monochrome: {
       badge: "Анонс",
-      title: "Изысканная",
-      highlight: "простота",
-      subtitle: "Где форма встречает функцию. Создано с умыслом, спроектировано для эффекта.",
-      cta: "Получить уведомление",
+      title: "HealthyPause",
+      highlight: "простота заботы",
+      subtitle: "Интуитивное приложение для родителей, которые заботятся о здоровье своих детей.",
+      cta: "Узнать о запуске",
       features: [
-        { icon: Sparkles, text: "Продуманно" },
-        { icon: Zap, text: "Эффективно" },
-        { icon: Shield, text: "Надежно" },
+        { icon: Eye, text: "Зрение под контролем" },
+        { icon: Heart, text: "Здоровая осанка" },
+        { icon: Brain, text: "Умственная активность" },
       ],
     },
     glass: {
       badge: "Превью",
-      title: "За пределами",
-      highlight: "границ",
-      subtitle: "Плавный опыт, который адаптируется под вас. Бесшовно, красиво, интуитивно.",
-      cta: "Запросить доступ",
+      title: "HealthyPause",
+      highlight: "гармония развития",
+      subtitle: "Индивидуальный подход к каждому ребёнку. Умные алгоритмы адаптируются под возраст и потребности.",
+      cta: "Присоединиться к бета-тесту",
       features: [
-        { icon: Sparkles, text: "Адаптивно" },
-        { icon: Zap, text: "Бесшовно" },
-        { icon: Shield, text: "Безопасно" },
+        { icon: Timer, text: "Персональные паузы" },
+        { icon: Book, text: "Развивающий контент" },
+        { icon: Shield, text: "Безопасность детей" },
       ],
     },
     terminal: {
-      badge: "> status: pending",
-      title: "$ sudo launch",
-      highlight: "--force",
-      subtitle: "// требуется root доступ. ожидание подтверждения развертывания...",
-      cta: "$ subscribe --notify",
+      badge: "> status: launching",
+      title: "$ healthypause",
+      highlight: "--init",
+      subtitle: "// система заботы о здоровье детей. многоплатформенное решение готово к запуску...",
+      cta: "$ notify --early-access",
       features: [
-        { icon: Sparkles, text: "--optimized" },
-        { icon: Zap, text: "--async" },
-        { icon: Shield, text: "--secure" },
+        { icon: Eye, text: "--eye-care" },
+        { icon: Heart, text: "--physical" },
+        { icon: Brain, text: "--mental" },
       ],
     },
     luxury: {
       badge: "Эксклюзивный превью",
-      title: "Открываем",
-      highlight: "совершенство",
+      title: "HealthyPause",
+      highlight: "премиум-забота",
       subtitle:
-        "Для избранных ценителей. Опыт, созданный для тех, кто не соглашается на меньшее.",
-      cta: "Запросить приглашение",
+        "Для родителей, которые выбирают лучшее для своих детей. Комплексный подход к здоровью и развитию.",
+      cta: "Получить приглашение",
       features: [
-        { icon: Sparkles, text: "Уникально" },
-        { icon: Zap, text: "Премиум" },
-        { icon: Shield, text: "Эксклюзив" },
+        { icon: Heart, text: "Индивидуальный план" },
+        { icon: Brain, text: "Экспертный контент" },
+        { icon: Shield, text: "VIP-поддержка" },
       ],
     },
   }
@@ -197,7 +198,7 @@ export function LandingPage() {
               theme === "luxury" && "border-amber-500/30",
             )}
           >
-            <Bell className="w-3 h-3 sm:w-4 sm:h-4" />
+            <Icon name="Bell" className="w-3 h-3 sm:w-4 sm:h-4" />
             {currentContent.badge}
           </div>
 
@@ -405,7 +406,7 @@ export function LandingPage() {
               )}
             >
               {currentContent.cta}
-              <ArrowRight className="w-4 h-4" />
+              <Icon name="ArrowRight" className="w-4 h-4" />
             </button>
           </div>
 
@@ -465,8 +466,9 @@ export function LandingPage() {
             <div className="flex flex-col items-center sm:items-start">
               <div className="flex items-center gap-0.5 sm:gap-1">
                 {[1, 2, 3, 4, 5].map((i) => (
-                  <Star
+                  <Icon
                     key={i}
+                    name="Star"
                     className={cn(
                       "w-3 h-3 sm:w-3.5 sm:h-3.5 fill-current",
                       theme === "luxury" && "text-amber-400",
@@ -483,7 +485,7 @@ export function LandingPage() {
                 ))}
               </div>
               <span className="text-[10px] sm:text-xs">
-                {theme === "terminal" ? "// 2847 users_waiting" : "Уже 2 847+ в очереди"}
+                {theme === "terminal" ? "// 2847 users_waiting" : "Уже 2 847+ заинтересованных родителей"}
               </span>
             </div>
           </div>
